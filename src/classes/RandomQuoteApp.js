@@ -1,3 +1,4 @@
+import Quote from './Quote.js';
 import RandomQuote from './RandomQuote.js';
 
 class RandomQuoteApp {
@@ -10,9 +11,8 @@ class RandomQuoteApp {
   }
 
   displayCurrentQuote() {
-    const { text, author } = this.currentQuote;
-    this.quoteText.innerHTML = `"${text}"`;
-    this.quoteAuthor.innerHTML = `<i>${author}</i>`;
+    this.quoteText.innerHTML = this.currentQuote.formatText();
+    this.quoteAuthor.innerHTML = this.currentQuote.formatAuthor();
   }
 
   getRandomQuote() {
