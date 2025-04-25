@@ -1,3 +1,3 @@
-import randomquoteApp from './src/classes/RandomQuoteApp.js';
+import RandomQuoteApp from './src/classes/RandomQuoteApp.js';
 
-new randomquoteApp();
+new RandomQuoteApp();

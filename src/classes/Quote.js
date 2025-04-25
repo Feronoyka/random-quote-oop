@@ -5,12 +5,12 @@ class Quote {
     this.author = author;
   }
 
-  formatText() {
-    return `"${this.text}"`;
+  formatQuote() {
+    return `<i>"${this.text}"</i>`;
   }
 
   formatAuthor() {
-    return `<i>© ${this.author}</i>`;
+    return `© ${this.author}`;
   }
 }
 

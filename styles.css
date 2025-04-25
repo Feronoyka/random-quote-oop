@@ -9,6 +9,12 @@ body {
   text-align: center;
 }
 
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 h1 {
   color: #fff;
 }
@@ -19,6 +25,7 @@ h1 {
   color: #fff;
   border: none;
   border-radius: 10px;
+  margin-inline: 1em;
   cursor: pointer;
 }
 
@@ -27,7 +34,15 @@ h1 {
 }
 
 .btn-primary:hover {
-  background-color: #0069da;
+  background-color: #014a97;
+}
+
+.btn-secondary {
+  background-color: #32d600;
+}
+
+.btn-secondary:hover {
+  background-color: #43bc1e;
 }
 
 .btn-danger {
