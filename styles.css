@@ -66,9 +66,9 @@ h1 {
 }
 
 .fa-solid {
-  font-size: 30px;
+  font-size: 20px;
   vertical-align: middle;
-  color: yellow;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
