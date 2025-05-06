@@ -9,7 +9,7 @@ class RandomQuote {
     return new Quote(id, text, author);
   }
 
-  static async getRandomQuoteViaAPI() {
+  static async getRandomQuotePublicAPI() {
     const url = 'https://quoteslate.vercel.app/api/quotes/random';
     const option = { headers: { 'Content-Type': 'application/json' } };
     try {
@@ -21,6 +21,19 @@ class RandomQuote {
       }
     } catch (error) {
       console.error('Error:', error);
+    }
+  }
+
+  static async getRandomQuoteOwnAPI() {
+    const url = 'http://localhost:3000/quotes/random-quote';
+    const option = { headers: { 'Content-Type': 'application/json' } };
+    try {
+      const res = await fetch(url, option);
+      const quote = await res.json();
+      const { id, text, author } = quote;
+      return new Quote(id, text, author);
+    } catch (error) {
+      console.log(error);
     }
   }
 }

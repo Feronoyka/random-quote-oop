@@ -1,8 +1,15 @@
 const express = require('express'); //common js module
 const quotes = require('./data/quotes');
+const cors = require('cors');
 
 const app = express(); //app is instance of express
 const PORT = 3000;
+
+const corsOptions = {
+  origin: '*',
+};
+
+app.use(cors(corsOptions));
 
 function randomQuoteAPI() {
   return quotes[Math.floor(Math.random() * quotes.length)];
@@ -11,10 +18,6 @@ function randomQuoteAPI() {
 app.get('/quotes/random-quote', (req, res) => {
   const randomQuote = randomQuoteAPI();
   res.json(randomQuote);
-});
-
-app.get('/quotes', (req, res) => {
-  res.json(quotes);
 });
 
 app.listen(PORT, () => {

@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 20px auto;
   text-align: center;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  color: #fff;
+  color: #faecec;
 }
 
 .btn {
@@ -37,12 +37,21 @@ h1 {
   background-color: #014a97;
 }
 
+.btn-warning {
+  background-color: rgb(190, 190, 2);
+  color: black;
+}
+
+.btn-warning:hover {
+  background-color: rgb(161, 161, 0);
+}
+
 .btn-secondary {
-  background-color: #32d600;
+  background-color: #2ec600;
 }
 
 .btn-secondary:hover {
-  background-color: #43bc1e;
+  background-color: #249c00;
 }
 
 .btn-danger {
@@ -70,6 +79,10 @@ h1 {
   vertical-align: middle;
   color: rgb(255, 255, 255);
   cursor: pointer;
+}
+
+.fa-server {
+  color: black;
 }
 
 .quote-author {
