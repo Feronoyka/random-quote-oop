@@ -2,22 +2,20 @@
 
 A project that displays random quotes with the option to mark them as favorites. It consists of a frontend (Vanilla JS) and a backend (Node.js).
 
-# Get random quote from local
+# Project Structure
 
-## Get random quote from public API
-
-### Get random quote from own API
-
-📂 Project Structure
 root/
 ├── client/ # frontend (Vanilla JS)
 ├── server/ # backend (Node.js + Express)
 
-📦 Install Dependencies to file server
-`cd server`
-`npm install`
+# Require Dependencies to file server
 
-🖥️ Running in Development Mode
+install dependencies
+
+1. `cd server`
+2. `npm install`
+
+# Running in Development Mode
 
 1. Client (Vanilla JS)
    `cd client`
@@ -26,13 +24,15 @@ root/
 2. Server (Node.js)
    `cd server`
    `npm run dev` (uses nodemon)
+   port uses: http://localhost:3000
 
-🛠️ Run in Production Build the client (HTML/CSS/JS if needed)
+# Run in Production Build the client (HTML/CSS/JS if needed)
 
 1. Make sure the server is production-ready
 2. Configure .env or set PORT manually
 3. `cd server`
 4. `npm start`
+5. the project will be running on http://127.0.0.1:8080
 
 📬 API Endpoints
 Method: GET
