@@ -1,47 +1,51 @@
-📉 Random Quotes Project (Vanilla + Node.js)
+Random Quotes Project (Vanilla + Node.js)
 
 A project that displays random quotes with the option to mark them as favorites. It consists of a frontend (Vanilla JS) and a backend (Node.js).
 
 # Project Structure
 
-root/
-├── client/ # frontend (Vanilla JS)
-├── server/ # backend (Node.js + Express)
+-root/
+-├── client/ # frontend (Vanilla JS)
+-├── server/ # backend (Node.js + Express)
 
 # Require Dependencies to file server
 
-install dependencies
+## install dependencies only in the file server
 
 1. `cd server`
 2. `npm install`
 
 # Running in Development Mode
 
-1. Client (Vanilla JS)
-   `cd client`
-   `npx live-server` (u can use either)
+## Client (Vanilla JS)
 
-2. Server (Node.js)
-   `cd server`
-   `npm run dev` (uses nodemon)
-   port uses: http://localhost:3000
+1. `cd client`
+2. `npx live-server` (u can use either)
 
-# Run in Production Build the client (HTML/CSS/JS if needed)
+## Server (Node.js) open a new terminal window
+
+1. `cd server`
+2. `npm run dev`
+3. will be running http://localhost:3000
+
+# Running in Production Build the client (HTML/CSS/JS if needed)
 
 1. Make sure the server is production-ready
 2. Configure .env or set PORT manually
-3. `cd server`
-4. `npm start`
-5. the project will be running on http://127.0.0.1:8080
 
-📬 API Endpoints
-Method: GET
-URL: /quotes/random-quote
-description: get delayed random quote
+## Run server
 
-API_URL
+In the file server instead of npm run dev (nodemon) use npm start
 
-1. In file client you can configure URL http://localhost:3000 to assigned URL http://www.example.com
+1. `cd server`
+2. `npm start`
 
-✍️ Author
-@Feronoyka
+## Run client
+
+In the `/client/src/config.js` replace API_URL from http://localhost:3000 to https://example.com
+
+# API Endpoints
+
+-Method: `GET`
+-URL: `/quotes/random-quote`
+-description: get delayed random quote
