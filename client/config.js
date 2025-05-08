@@ -1,6 +1,6 @@
 const config = {
   PUBLICK_API: 'https://quoteslate.vercel.app',
-  API_URL: 'http://localhost:3000',
+  API_URL: 'https://random-quote-oop.onrender.com',
 };
 
 export default config;
